@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+%base_style {
+    background-color: $background_color;
+    color: $main_text_color;
+    font-family: Merriweather;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+%poor_text_style {
+    color: $text_color;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
