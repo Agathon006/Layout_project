@@ -1,136 +1,22 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.aside-wrapper-opened {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+.main__portfolio-navigation-active-button {
+  color: black;
+  background-color: #bdae82;
 }
 
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.main__portfolio-navigation-inactive-button {
+  color: #bdae82;
+  background-color: black;
 }
 
 body {
@@ -142,6 +28,7 @@ body {
 }
 
 p,
+span,
 a,
 ul,
 li,
@@ -184,7 +71,8 @@ textarea {
 .aside .aside__list {
   margin: 64px 0 0 127px;
 }
-.aside .aside__list .aside__list-element .aside__list-element-button {
+.aside .aside__list .aside__list-element .header__items-right-part-list-element-link {
+  text-decoration: none;
   font-size: 35px;
   line-height: 72px;
   background-color: transparent;
@@ -231,7 +119,10 @@ textarea {
 }
 .home .header .header__items .header__items-right-part .header__items-right-part-language .header__items-right-part-language-slash {
   margin: 0 8px;
-  font-weight: 700;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
 }
 .home .header .header__items .header__items-right-part .header__items-right-part-language .header__items-right-part-language-link-ru {
   text-decoration: none;
@@ -247,7 +138,7 @@ textarea {
   padding: 0;
   border: none;
   background-color: transparent;
-  background-image: url("../images/burger-menu.svg");
+  background-image: url("../images/burger-menu/burger-menu.svg");
   cursor: pointer;
 }
 .home .home__plot {
@@ -327,18 +218,12 @@ textarea {
   height: 55px;
   border: none;
   margin-left: 5px;
-  color: #bdae82;
-  background-color: black;
   transition: 0.5s background-color;
   border: #bdae82 2px solid;
   cursor: pointer;
 }
 .main .main__portfolio .main__portfolio-navigation .main__portfolio-navigation-button:first-child {
   margin-left: 0;
-}
-.main .main__portfolio .main__portfolio-navigation .main__portfolio-navigation-button:last-child {
-  color: black;
-  background-color: #bdae82;
 }
 .main .main__portfolio .main__portfolio-navigation .main__portfolio-navigation-button:hover {
   color: black;
@@ -374,11 +259,11 @@ textarea {
   padding: 0;
   background: transparent;
   transform: translate(-50%, -50%);
-  background-image: url("../images/play-button.svg");
+  background-image: url("../images/main/play-button.svg");
   cursor: pointer;
 }
 .main .main__video .main__video-container .main__video-container-button:hover {
-  background-image: url("../images/play-button-hover.svg");
+  background-image: url("../images/main/play-button-hover.svg");
 }
 .main .main__video .main__video-container .main__video-container-player {
   width: 100%;
@@ -429,7 +314,7 @@ textarea {
 }
 .main .main__feedback {
   height: 700px;
-  background-image: url("../images/contacts.jpg");
+  background-image: url("../images/main/contacts.jpg");
   background-size: cover;
   display: flex;
   justify-content: right;

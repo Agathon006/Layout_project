@@ -5,31 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="/scripts/index.js" defer></script>
+    <script src="../scripts/index.js" defer></script>
 </head>
 
 <body>
     <div class="aside-wrapper" id="aside-wrapper">
         <div class="aside">
             <button class="aside__button" id="aside-button">
-                <img src="../images/aside-button.svg" alt="close" class="aside__button-image">
+                <img src="../images/burger-menu/aside-button.svg" alt="close" class="aside__button-image">
             </button>
             <ul class="aside__list">
                 <li class="aside__list-element">
-                    <button class="aside__list-element-button aside__list-element-button-skills" id="aside-list-element-button-skills">Skills</button>
+                    <a href="index.html#main-skills" class="header__items-right-part-list-element-link" id="header-items-right-part-list-element-link-skills">Skills</a>
                 </li>
                 <li class="aside__list-element">
-                    <button class="aside__list-element-button aside__list-element-button-portfolio" id="aside-list-element-button-portfolio">Portfolio</button>
+                    <a href="index.html#main-portfolio" class="header__items-right-part-list-element-link" id="header-items-right-part-list-element-link-portfolio">Portfolio</a>
                 </li>
                 <li class="aside__list-element">
-                    <button class="aside__list-element-button aside__list-element-button-video" id="aside-list-element-button-video">Video</button>
+                    <a href="index.html#main-video" class="header__items-right-part-list-element-link" id="header-items-right-part-list-element-link-video">Video</a>
                 </li>
                 <li class="aside__list-element">
-                    <button class="aside__list-element-button aside__list-element-button-price" id="aside-list-element-button-price">Price</button>
+                    <a href="index.html#main-price" class="header__items-right-part-list-element-link" id="header-items-right-part-list-element-link-price">Price</a>
                 </li>
                 <li class="aside__list-element">
-                    <button class="aside__list-element-button aside__list-element-button-contacts" id="aside-list-element-button-contacts">Contacts</button>
+                    <a href="index.html#main-feedback" class="header__items-right-part-list-element-link" id="header-items-right-part-list-element-link-contacts">Contacts</a>
                 </li>   
             </ul>
         </div>
@@ -37,29 +38,29 @@
     <div class="home">
         <header class="header">
             <nav class="header__items">
-                <img src="images/logo.svg" alt="logo" class="header__items-logo">
+                <img src="../images/header/logo.svg" alt="logo" class="header__items-logo">
                 <div class="header__items-right-part">
                     <ul class="header__items-right-part-list" id="header-items-right-part-list">
                         <li class="header__items-right-part-list-element">
-                            <a href="#" class="header__items-right-part-list-element-link header__items-right-part-list-element-link-skills">Skills</a>
+                            <a href="index.html#main-skills" class="header__items-right-part-list-element-link">Skills</a>
                         </li>
                         <li class="header__items-right-part-list-element">
-                            <a href="#" class="header__items-right-part-list-element-link header__items-right-part-list-element-link-portfolio">Portfolio</a>
+                            <a href="index.html#main-portfolio" class="header__items-right-part-list-element-link">Portfolio</a>
                         </li>
                         <li class="header__items-right-part-list-element">
-                            <a href="#" class="header__items-right-part-list-element-link header__items-right-part-list-element-link-video">Video</a>
+                            <a href="index.html#main-video" class="header__items-right-part-list-element-link">Video</a>
                         </li>
                         <li class="header__items-right-part-list-element">
-                            <a href="#" class="header__items-right-part-list-element-link header__items-right-part-list-element-link-price">Price</a>
+                            <a href="index.html#main-price" class="header__items-right-part-list-element-link">Price</a>
                         </li>
                         <li class="header__items-right-part-list-element">
-                            <a href="#" class="header__items-right-part-list-element-link header__items-right-part-list-element-link-contacts">Contacts</a>
+                            <a href="index.html#main-feedback" class="header__items-right-part-list-element-link">Contacts</a>
                         </li>
                     </ul>
                     <div class="header__items-right-part-language">
                         <a href="#" class="header__items-right-part-language-link-en">en</a>
-                        <p class="header__items-right-part-language-slash">/</p>
-                        <a href="#" class="header__items-right-part-language-link-ru">ru</a>
+                        <span class="header__items-right-part-language-slash">/</span>
+                        <a href="#" class="header__items-right-part-language-link-ru" id="header-items-right-part-language-link-ru">ru</a>
                     </div>
                     <div class="header__items-right-part-menu">
                         <button class="header__items-right-part-menu-button" id="header-items-right-part-menu-button"></button>
@@ -84,7 +85,7 @@
             <ul class="main__skills-list">
                 <li class="main__skills-list-element">
                     <section class="main__skills-list-element-section">
-                        <img src="/images/skills-camera.svg" alt="camera"
+                        <img src="../images/main/skills-camera.svg" alt="camera"
                             class="main__skills-list-element-section-image">
                         <h3 class="main__skills-list-element-section-title">Digital photography</h3>
                         <p class="main__skills-list-element-section-about">High-quality photos in the studio and on the
@@ -93,7 +94,7 @@
                 </li>
                 <li class="main__skills-list-element">
                     <section class="main__skills-list-element-section">
-                        <img src="/images/skills-video.svg" alt="video" class="main__skills-list-element-section-image">
+                        <img src="../images/main/skills-video.svg" alt="video" class="main__skills-list-element-section-image">
                         <h3 class="main__skills-list-element-section-title">Video shooting</h3>
                         <p class="main__skills-list-element-section-about">Capture your moments so that they always stay
                             with you</p>
@@ -101,7 +102,7 @@
                 </li>
                 <li class="main__skills-list-element">
                     <section class="main__skills-list-element-section">
-                        <img src="/images/skills-image.svg" alt="image" class="main__skills-list-element-section-image">
+                        <img src="../images/main/skills-image.svg" alt="image" class="main__skills-list-element-section-image">
                         <h3 class="main__skills-list-element-section-title">Retouch</h3>
                         <p class="main__skills-list-element-section-about">I strive to make photography surpass reality
                         </p>
@@ -109,7 +110,7 @@
                 </li>
                 <li class="main__skills-list-element">
                     <section class="main__skills-list-element-section">
-                        <img src="/images/skills-video.svg" alt="video" class="main__skills-list-element-section-image">
+                        <img src="../images/main/skills-video.svg" alt="video" class="main__skills-list-element-section-image">
                         <h3 class="main__skills-list-element-section-title">Audio</h3>
                         <p class="main__skills-list-element-section-about">Professional sounds recording for video,
                             advertising, portfolio</p>
@@ -124,18 +125,18 @@
                 <div class="main-separator"></div>
             </div>
             <nav class="main__portfolio-navigation" id="main-portfolio-navigation">
-                <button class="main__portfolio-navigation-button main__portfolio-navigation-button-winter" id="main-portfolio-navigation-button-winter">Winter</button>
-                <button class="main__portfolio-navigation-button main__portfolio-navigation-button-spring" id="main-portfolio-navigation-button-spring">Spring</button>
-                <button class="main__portfolio-navigation-button main__portfolio-navigation-button-summer" id="main-portfolio-navigation-button-summer">Summer</button>
-                <button class="main__portfolio-navigation-button main__portfolio-navigation-button-autumn" id="main-portfolio-navigation-button-autumn">Autumn</button>
+                <button class="main__portfolio-navigation-button main__portfolio-navigation-inactive-button" id="main-portfolio-navigation-button-winter">Winter</button>
+                <button class="main__portfolio-navigation-button main__portfolio-navigation-inactive-button" id="main-portfolio-navigation-button-spring">Spring</button>
+                <button class="main__portfolio-navigation-button main__portfolio-navigation-inactive-button" id="main-portfolio-navigation-button-summer">Summer</button>
+                <button class="main__portfolio-navigation-button main__portfolio-navigation-active-button" id="main-portfolio-navigation-button-autumn">Autumn</button>
             </nav>
             <div class="main__portfolio-images">
-                <img src="/images/autumn-1.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-1">
-                <img src="/images/autumn-2.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-2">
-                <img src="/images/autumn-3.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-3">
-                <img src="/images/autumn-4.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-4">
-                <img src="/images/autumn-5.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-5">
-                <img src="/images/autumn-6.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-6">
+                <img src="../images/weather/autumn/autumn-1.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-1">
+                <img src="../images/weather/autumn/autumn-2.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-2">
+                <img src="../images/weather/autumn/autumn-3.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-3">
+                <img src="../images/weather/autumn/autumn-4.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-4">
+                <img src="../images/weather/autumn/autumn-5.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-5">
+                <img src="../images/weather/autumn/autumn-6.svg" alt="autumn-image" class="main__portfolio-images-image" id="main-portfolio-images-image-6">
             </div>
         </section>
         <section class="main__video" id="main-video">
@@ -146,7 +147,7 @@
             </div>
             <div class="main__video-container">
                 <button class="main__video-container-button" id="main__video_container_button"></button>
-                <video src="/video/nature.mp4" class="main__video-container-player" poster="/images/video-poster.svg"
+                <video src="../video/nature.mp4" class="main__video-container-player" poster="/images/main/video-poster.svg"
                     id="main__video_container_player"></video>
             </div>
         </section>
@@ -212,23 +213,23 @@
     </main>
     <footer class="footer">
         <section class="footer__data">
-            <p class="footer__data-element">©</p>
-            <p class="footer__data-element">2022</p>
-            <p class="footer__data-element">github</p>
+            <span class="footer__data-element">©</span>
+            <span class="footer__data-element">2022</span>
+            <span class="footer__data-element">github</span>
         </section>
-        <p class="footer__text">Rolling Scopes School</p>
+        <span class="footer__text">Rolling Scopes School</span>
         <section class="footer__social">
             <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                <img src="/images/instagram.svg" alt="instagram" class="footer__social-link-image">
+                <img src="../images/footer/instagram.svg" alt="instagram" class="footer__social-link-image">
             </a>
             <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                <img src="/images/twitter.svg" alt="twitter" class="footer__social-link-image">
+                <img src="../images/footer/twitter.svg" alt="twitter" class="footer__social-link-image">
             </a>
             <a href="https://ru-ru.facebook.com/" target="_blank" class="footer__social-link">
-                <img src="/images/facebook.svg" alt="facebook" class="footer__social-link-image">
+                <img src="../images/footer/facebook.svg" alt="facebook" class="footer__social-link-image">
             </a>
             <a href="https://ru.pinterest.com/" target="_blank" class="footer__social-link">
-                <img src="/images/pinterest.svg" alt="pinterest" class="footer__social-link-image">
+                <img src="../images/footer/pinterest.svg" alt="pinterest" class="footer__social-link-image">
             </a>
         </section>
     </footer>
