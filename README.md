@@ -1,4 +1,4 @@
-# My first project, just to get in Frontend using html, scss, js, 
+# My first project, using html, scss, js
 
 ---
 
